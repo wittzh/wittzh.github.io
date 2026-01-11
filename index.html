@@ -287,145 +287,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/10/personal_blog_07/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Witt">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Witt的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2026/01/10/personal_blog_07/" class="post-title-link" itemprop="url">我的博客搭好了！过程简直像在打游戏通关 - 第07篇</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2026-01-10 20:56:33" itemprop="dateCreated datePublished" datetime="2026-01-10T20:56:33+08:00">2026-01-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 13:52:58" itemprop="dateModified" datetime="2026-01-11T13:52:58+08:00">2026-01-11</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <div class="title">第07篇 - 怎么制作/about/、/categories/、/tags/页面</div>
-<h2 id="1-怎么制作-about-页面">1 怎么制作/about/页面</h2>
-<h3 id="1-1-新建-about-页面">1.1 新建/about/页面</h3>
-<p>在Hexo博客目录下执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
-<p>这将在 <code>source/about/</code> 目录下创建一个新的Markdown文件 <code>index.md</code>。</p>
-<h3 id="1-2-编辑-about-页面">1.2 编辑/about/页面</h3>
-<p>打开 <code>source/about/index.md</code> 文件，编辑页面内容。可以添加个人介绍、联系信息、社交媒体链接等。</p>
-<p>我的是这么写的：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于</span><br><span class="line">layout: about</span><br><span class="line"><span class="section">date: 2026-01-07 23:12:19</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line">... 其他的介绍内容 ...</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="1-3-部署">1.3 部署</h3>
-<p>老规矩： <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-<h2 id="2-怎么制作-categories-页面">2 怎么制作/categories/页面</h2>
-<h3 id="2-1-新建-categories-页面">2.1 新建/categories/页面</h3>
-<p>在Hexo博客目录下执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>这将在 <code>source/categories/</code> 目录下创建一个新的Markdown文件 <code>index.md</code>。</p>
-<h3 id="2-2-编辑-categories-页面">2.2 编辑/categories/页面</h3>
-<p>打开 <code>source/categories/index.md</code> 文件，编辑页面内容。可以添加分类列表、分类描述等。</p>
-<p>我的是这么写的：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">date: 2026-01-07 23:12:33</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-3-部署">2.3 部署</h3>
-<p>老规矩： <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-<h2 id="3-怎么制作-tags-页面">3 怎么制作/tags/页面</h2>
-<h3 id="3-1-新建-tags-页面">3.1 新建/tags/页面</h3>
-<p>在Hexo博客目录下执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>这将在 <code>source/tags/</code> 目录下创建一个新的Markdown文件 <code>index.md</code>。</p>
-<h3 id="3-2-编辑-tags-页面">3.2 编辑/tags/页面</h3>
-<p>打开 <code>source/tags/index.md</code> 文件，编辑页面内容。可以添加标签列表、标签描述等。</p>
-<p>我的是这么写的：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">type: tags</span><br><span class="line"><span class="section">date: 2026-01-07 23:12:26</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-<h3 id="3-3-部署">3.3 部署</h3>
-<p>老规矩： <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li class="series-current">第07篇 - 怎么制作/about/、/categories/、/tags/页面</li>
-    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)（马上就好）</a></li>
-    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频（马上就好）</a></li>
-  </ul>
-  <hr>
-</div>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/10/personal_blog_06/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -545,7 +406,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/10/personal_blog_09/">
+    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/10/personal_blog_07/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -559,7 +420,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2026/01/10/personal_blog_09/" class="post-title-link" itemprop="url">我的博客搭好了！过程简直像在打游戏通关 - 第09篇</a>
+            <a href="/2026/01/10/personal_blog_07/" class="post-title-link" itemprop="url">我的博客搭好了！过程简直像在打游戏通关 - 第07篇</a>
         </h2>
 
         <div class="post-meta">
@@ -576,7 +437,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 14:10:15" itemprop="dateModified" datetime="2026-01-11T14:10:15+08:00">2026-01-11</time>
+                <time title="修改时间：2026-01-11 13:52:58" itemprop="dateModified" datetime="2026-01-11T13:52:58+08:00">2026-01-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -594,7 +455,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>800</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -613,15 +474,40 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <div class="title">第09篇 - 添加统计字数和阅读时长的插件（马上就好）</div>
-<p>Hexo 的 Next 主题本身就内置了对文章字数和阅读时长的统计功能，但默认情况下通常是关闭的，需要你手动开启并进行一些简单的配置。</p>
-<p>注意：可能要安装必要的插件。</p>
-<h2 id="1-安装插件">1 安装插件</h2>
-<p>进入Hexo项目的根目录，执行以下命令安装插件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在 Hexo 项目根目录执行</span></span><br><span class="line"><span class="comment">#   如果未安装，则执行以下命令安装</span></span><br><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
-<h2 id="2-配置">2 配置</h2>
-<p>进入Hexo项目的根目录，编辑主题配置文件 <code>themes/next/_config.yml</code> ：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="comment"># 是否将“发表时间、更新时间、分类”和“字数、时长”分成两行显示</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 在文章页面显示“字数：”、“阅读时长：”等文字</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 在网站底部显示总字数和总阅读时长（通常不开启）</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># 平均词长，英文建议4，中文建议2</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">2</span></span><br><span class="line">  <span class="comment"># 平均阅读速度（词每分钟），中文建议300</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">300</span></span><br></pre></td></tr></table></figure>
+          <div class="title">第07篇 - 怎么制作/about/、/categories/、/tags/页面</div>
+<h2 id="1-怎么制作-about-页面">1 怎么制作/about/页面</h2>
+<h3 id="1-1-新建-about-页面">1.1 新建/about/页面</h3>
+<p>在Hexo博客目录下执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+<p>这将在 <code>source/about/</code> 目录下创建一个新的Markdown文件 <code>index.md</code>。</p>
+<h3 id="1-2-编辑-about-页面">1.2 编辑/about/页面</h3>
+<p>打开 <code>source/about/index.md</code> 文件，编辑页面内容。可以添加个人介绍、联系信息、社交媒体链接等。</p>
+<p>我的是这么写的：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于</span><br><span class="line">layout: about</span><br><span class="line"><span class="section">date: 2026-01-07 23:12:19</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line">... 其他的介绍内容 ...</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="1-3-部署">1.3 部署</h3>
+<p>老规矩： <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<h2 id="2-怎么制作-categories-页面">2 怎么制作/categories/页面</h2>
+<h3 id="2-1-新建-categories-页面">2.1 新建/categories/页面</h3>
+<p>在Hexo博客目录下执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>这将在 <code>source/categories/</code> 目录下创建一个新的Markdown文件 <code>index.md</code>。</p>
+<h3 id="2-2-编辑-categories-页面">2.2 编辑/categories/页面</h3>
+<p>打开 <code>source/categories/index.md</code> 文件，编辑页面内容。可以添加分类列表、分类描述等。</p>
+<p>我的是这么写的：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">type: categories</span><br><span class="line"><span class="section">date: 2026-01-07 23:12:33</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-3-部署">2.3 部署</h3>
+<p>老规矩： <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<h2 id="3-怎么制作-tags-页面">3 怎么制作/tags/页面</h2>
+<h3 id="3-1-新建-tags-页面">3.1 新建/tags/页面</h3>
+<p>在Hexo博客目录下执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>这将在 <code>source/tags/</code> 目录下创建一个新的Markdown文件 <code>index.md</code>。</p>
+<h3 id="3-2-编辑-tags-页面">3.2 编辑/tags/页面</h3>
+<p>打开 <code>source/tags/index.md</code> 文件，编辑页面内容。可以添加标签列表、标签描述等。</p>
+<p>我的是这么写的：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">type: tags</span><br><span class="line"><span class="section">date: 2026-01-07 23:12:26</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-3-部署">3.3 部署</h3>
+<p>老规矩： <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
 <hr>
 <div class="series-nav">
   <hr>
@@ -633,9 +519,9 @@
     <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
     <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
     <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
+    <li class="series-current">第07篇 - 怎么制作/about/、/categories/、/tags/页面</li>
     <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)（马上就好）</a></li>
-    <li class="series-current">第09篇 - 添加统计字数和阅读时长的插件</li>
+    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
     <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频（马上就好）</a></li>
   </ul>
   <hr>
@@ -810,6 +696,120 @@
     <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
     <li class="series-current">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)（马上就好）</li>
     <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
+    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频（马上就好）</a></li>
+  </ul>
+  <hr>
+</div>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/10/personal_blog_09/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Witt">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Witt的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/01/10/personal_blog_09/" class="post-title-link" itemprop="url">我的博客搭好了！过程简直像在打游戏通关 - 第09篇</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2026-01-10 20:56:33" itemprop="dateCreated datePublished" datetime="2026-01-10T20:56:33+08:00">2026-01-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-01-11 14:10:15" itemprop="dateModified" datetime="2026-01-11T14:10:15+08:00">2026-01-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>800</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <div class="title">第09篇 - 添加统计字数和阅读时长的插件（马上就好）</div>
+<p>Hexo 的 Next 主题本身就内置了对文章字数和阅读时长的统计功能，但默认情况下通常是关闭的，需要你手动开启并进行一些简单的配置。</p>
+<p>注意：可能要安装必要的插件。</p>
+<h2 id="1-安装插件">1 安装插件</h2>
+<p>进入Hexo项目的根目录，执行以下命令安装插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在 Hexo 项目根目录执行</span></span><br><span class="line"><span class="comment">#   如果未安装，则执行以下命令安装</span></span><br><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
+<h2 id="2-配置">2 配置</h2>
+<p>进入Hexo项目的根目录，编辑主题配置文件 <code>themes/next/_config.yml</code> ：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="comment"># 是否将“发表时间、更新时间、分类”和“字数、时长”分成两行显示</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 在文章页面显示“字数：”、“阅读时长：”等文字</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 在网站底部显示总字数和总阅读时长（通常不开启）</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># 平均词长，英文建议4，中文建议2</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">2</span></span><br><span class="line">  <span class="comment"># 平均阅读速度（词每分钟），中文建议300</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">300</span></span><br></pre></td></tr></table></figure>
+<hr>
+<div class="series-nav">
+  <hr>
+  <div class="series-title">本系列文章</div>
+  <ul class="series-list">
+    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
+    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
+    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
+    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
+    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
+    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
+    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
+    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)（马上就好）</a></li>
+    <li class="series-current">第09篇 - 添加统计字数和阅读时长的插件</li>
     <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频（马上就好）</a></li>
   </ul>
   <hr>
@@ -1088,7 +1088,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 14:06:20" itemprop="dateModified" datetime="2026-01-11T14:06:20+08:00">2026-01-11</time>
+                <time title="修改时间：2026-01-11 16:47:55" itemprop="dateModified" datetime="2026-01-11T16:47:55+08:00">2026-01-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1106,7 +1106,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.4k</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1163,6 +1163,13 @@
 <p>我猜测是因为在一开始我让AI帮我做了一些配置，然后AI改了Hexo中的某些文件，导致了这个问题。</p>
 <h3 id="解决方案-3">解决方案</h3>
 <p>重装Hexo。</p>
+<h2 id="4-文章的子目录的链接，点击无效">4 文章的子目录的链接，点击无效</h2>
+<h3 id="问题描述-4">问题描述</h3>
+<p>在我的博客文章中，当我点击目录打开了子目录，然后点击子目录链接时，发现没有跳转。</p>
+<h3 id="排查BUG-4">排查BUG</h3>
+<p>可能是我在文章头部添加了标题 <code>&lt;div class=&quot;title&quot;&gt;第03篇 - 搭建过程之：一路踩坑&lt;/div&gt;</code>，导致在渲染markdown目录时出错了。</p>
+<h3 id="解决方案-4">解决方案</h3>
+<p>将所有的markdown标题的级别降低一级，就可以正常点击子目录链接了。总之，不要出现 一级标题，比如 <code># title1</code>。</p>
 <p>未完待续…</p>
 <div class="series-nav">
   <hr>
