@@ -28,7 +28,7 @@
 <meta property="og:description" content="第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库 备份Hexo博客的源码目录，是为了防止本地环境丢失或损坏时，能够快速恢复博客。 一般来说，博客的源码目录包括以下几个文件和文件夹：  source 文件夹：存放Markdown格式的文章源文件。 themes 文件夹：存放Hexo的主题文件。 _config*.yml 文件：Hexo的主配置文件，和各类主题的配置文件。 package">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-10T12:39:33.000Z">
-<meta property="article:modified_time" content="2026-01-11T13:52:04.864Z">
+<meta property="article:modified_time" content="2026-01-14T16:22:34.847Z">
 <meta property="article:author" content="Witt">
 <meta property="article:tag" content="GitHub Pages">
 <meta property="article:tag" content="Hexo">
@@ -203,7 +203,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 21:52:04" itemprop="dateModified" datetime="2026-01-11T21:52:04+08:00">2026-01-11</time>
+                <time title="修改时间：2026-01-15 00:22:34" itemprop="dateModified" datetime="2026-01-15T00:22:34+08:00">2026-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -221,14 +221,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -252,30 +252,32 @@
 <p>我的Hexo项目目录名称为 <code>hexo_blog</code>，在该目录下，直接用git命令将该目录初始化为一个git仓库，然后提交所有的源码到Gitee上了。<br>
 以下是我的hexo_blog目录下的.gitignore文件内容，忽略了一些不需要备份的文件和文件夹：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">db.json</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">.deploy_git/</span><br><span class="line">_multiconfig.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># Log file</span></span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">/logs/</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">logs/*</span><br><span class="line"></span><br><span class="line"><span class="comment"># Package Files</span></span><br><span class="line">*.war</span><br><span class="line">*.nar</span><br><span class="line">*.ear</span><br><span class="line">*.zip</span><br><span class="line">*.tar</span><br><span class="line">*.tar.gz</span><br><span class="line">*.rar</span><br><span class="line">*/dist/</span><br><span class="line">*/build/</span><br><span class="line">*/bin/</span><br><span class="line"></span><br><span class="line"><span class="comment"># virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml</span></span><br><span class="line">hs_err_pid*</span><br><span class="line"><span class="comment"># Windows:</span></span><br><span class="line">Thumbs.db</span><br><span class="line">ehthumbs.db</span><br><span class="line">desktop.ini</span><br><span class="line"><span class="comment"># My configurations:</span></span><br><span class="line">db.ini</span><br><span class="line">deploy_key_rsa</span><br><span class="line"><span class="comment">#svn</span></span><br><span class="line">.svn/</span><br><span class="line">*/.svn/</span><br><span class="line"></span><br><span class="line"><span class="comment">#idea的target文件夹</span></span><br><span class="line">target/*</span><br><span class="line">*/target/*</span><br><span class="line">out/*</span><br><span class="line">*/out/*</span><br><span class="line"></span><br><span class="line"><span class="comment">### IntelliJ IDEA ###</span></span><br><span class="line">.idea</span><br><span class="line">.idea/*</span><br><span class="line">*.iws</span><br><span class="line">*.iml</span><br><span class="line">*.ipr</span><br><span class="line">*.lock</span><br><span class="line">rebel.xml</span><br><span class="line"></span><br><span class="line">HELP.md</span><br><span class="line">target/</span><br><span class="line">!.mvn/wrapper/maven-wrapper.jar</span><br><span class="line">!**/src/main/**/target/</span><br><span class="line"></span><br><span class="line"><span class="comment">### STS ###</span></span><br><span class="line">.apt_generated</span><br><span class="line">.classpath</span><br><span class="line">.factorypath</span><br><span class="line">.project</span><br><span class="line">.settings</span><br><span class="line">.springBeans</span><br><span class="line">.sts4-cache</span><br><span class="line"></span><br><span class="line"><span class="comment">### NetBeans ###</span></span><br><span class="line">/nbproject/private/</span><br><span class="line">/nbbuild/</span><br><span class="line">/dist/</span><br><span class="line">/nbdist/</span><br><span class="line">/.nb-gradle/</span><br><span class="line">build/</span><br><span class="line">!**/src/main/**/build/</span><br><span class="line"></span><br><span class="line"><span class="comment">### VS Code ###</span></span><br><span class="line">.vscode/</span><br><span class="line"></span><br><span class="line"><span class="comment">### test</span></span><br><span class="line">*-aitest*</span><br><span class="line">**/test/</span><br><span class="line">**/test/*</span><br><span class="line">**/src/test/</span><br><span class="line">**/src/test/**</span><br><span class="line"></span><br><span class="line"><span class="comment">### temp ignore ###</span></span><br><span class="line">*.cache</span><br><span class="line">*.diff</span><br><span class="line">*.patch</span><br><span class="line">*.tmp</span><br><span class="line">*.java~</span><br><span class="line">*.properties~</span><br><span class="line">*.xml~</span><br><span class="line">sessionStore</span><br><span class="line"></span><br><span class="line"><span class="comment">### system ignore ###</span></span><br><span class="line">Servers</span><br><span class="line">.metadata</span><br><span class="line">upload</span><br><span class="line">gen_code</span><br><span class="line">application-preview.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">### node ###</span></span><br><span class="line">node_modules/</span><br><span class="line"></span><br><span class="line"><span class="comment"># python代码缓存</span></span><br><span class="line">__pycache__/</span><br><span class="line">**/__pycache__/</span><br><span class="line">**/__pycache__/*</span><br><span class="line"></span><br><span class="line">**/nohup.out</span><br><span class="line"></span><br><span class="line">.github/</span><br></pre></td></tr></table></figure>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/08/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li class="series-current">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
     </div>
 
     
     
     
+    <div class="series-nav">
+      <hr>
+      <div class="series-title">本系列文章</div>
+      <ul class="series-list">
+            <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
+            <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
+            <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
+            <li class="series-current">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</li>
+            <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
+            <li><a href="/2026/01/11/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
+            <li><a href="/2026/01/11/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
+            <li><a href="/2026/01/11/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
+            <li><a href="/2026/01/11/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
+            <li><a href="/2026/01/11/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
+            <li><a href="/2026/01/11/personal_blog_11/">第11篇 - 怎么创建文章系列导航</a></li>
+      </ul>
+      <hr>
+    </div>
+
+
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -370,7 +372,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -428,13 +430,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">18k</span>
+    <span title="站点总字数">21k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">16 分钟</span>
+    <span title="站点阅读时长">19 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>

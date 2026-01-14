@@ -165,6 +165,178 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/11/personal_blog_11/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Witt">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Witt的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2026/01/11/personal_blog_11/" class="post-title-link" itemprop="url">我的博客搭好了！过程简直像在打游戏通关 - 第11篇</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2026-01-11 20:25:33" itemprop="dateCreated datePublished" datetime="2026-01-11T20:25:33+08:00">2026-01-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-01-15 00:37:47" itemprop="dateModified" datetime="2026-01-15T00:37:47+08:00">2026-01-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <div class="title">第11篇 - 怎么创建文章系列导航</div>
+<p>写系列文章时，手动维护每篇文章的导航列表太麻烦了。每次新增一篇文章，都要去修改所有相关文章的导航代码，简直是噩梦。</p>
+<h2 id="1-临时解决方案">1 临时解决方案</h2>
+<p>在实现自动化方案之前，我使用了一个临时方案：在每一篇文章的末尾都手动编写前端HTML代码来创建系列导航。</p>
+<p><strong>步骤</strong>：</p>
+<p>在文章的 Markdown 文件末尾，添加以下HTML代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;series-nav&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;series-title&quot;</span>&gt;</span>本系列文章<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;series-list&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;series-current&quot;</span>&gt;</span>第01篇 - 选择困难症发作<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_02/&quot;</span>&gt;</span>第02篇 - 搭建过程之：披荆斩棘，晋级啦！<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_03/&quot;</span>&gt;</span>第03篇 - 搭建过程之：一路踩坑<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_04/&quot;</span>&gt;</span>第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_05/&quot;</span>&gt;</span>第05篇 - 更换Hexo主题<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_06/&quot;</span>&gt;</span>第06篇 - 怎么给文章分类、打标签、展示目录<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_07/&quot;</span>&gt;</span>第07篇 - 怎么制作/about/、/categories/、/tags/页面<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_08/&quot;</span>&gt;</span>第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_09/&quot;</span>&gt;</span>第09篇 - 添加统计字数和阅读时长的插件<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;/2026/01/10/personal_blog_10/&quot;</span>&gt;</span>第10篇 - 怎么插入图片和视频<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li><strong>维护成本高</strong>：每次新增一篇文章，都要去修改所有相关文章的导航代码</li>
+<li><strong>容易出错</strong>：手动维护容易遗漏或写错链接</li>
+<li><strong>不灵活</strong>：如果系列文章顺序调整，需要手动修改所有文件</li>
+</ul>
+<p>所以，我决定实现一个自动化的方案，下面就是具体的实现步骤。</p>
+<p>好在 Hexo 和 Next 主题提供了灵活的扩展机制，我们可以实现一个自动化的系列导航功能。只需要在文章的 front matter 中添加几个字段，系统就会自动生成导航列表。</p>
+<h2 id="2-创建-Hexo-Helper-函数">2 创建 Hexo Helper 函数</h2>
+<p>首先，我们需要创建一个 Helper 函数来获取同一系列的所有文章。</p>
+<p><strong>步骤</strong>：</p>
+<ol>
+<li>在 Hexo 项目根目录下创建 <code>scripts/helpers/</code> 目录（如果不存在的话）。</li>
+<li>创建文件 <code>scripts/helpers/series-nav.js</code>，内容如下：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* global hexo */</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Get all posts in the same series, sorted by series_order</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &#123;<span class="type">Object</span>&#125; <span class="variable">post</span> - Current post object</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span> &#123;<span class="type">Array</span>&#125; Array of posts in the same series</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">hexo.<span class="property">extend</span>.<span class="property">helper</span>.<span class="title function_">register</span>(<span class="string">&#x27;get_series_posts&#x27;</span>, <span class="keyword">function</span>(<span class="params">post</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (!post || !post.<span class="property">series</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> [];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> seriesName = post.<span class="property">series</span>;</span><br><span class="line">  <span class="keyword">const</span> allPosts = <span class="variable language_">this</span>.<span class="property">site</span>.<span class="property">posts</span>.<span class="title function_">toArray</span>();</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// Filter posts with the same series name</span></span><br><span class="line">  <span class="keyword">const</span> seriesPosts = allPosts.<span class="title function_">filter</span>(<span class="function"><span class="params">p</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> p.<span class="property">series</span> === seriesName &amp;&amp; p.<span class="property">published</span>;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Sort by series_order if available, otherwise by date</span></span><br><span class="line">  seriesPosts.<span class="title function_">sort</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> orderA = a.<span class="property">series_order</span> !== <span class="literal">undefined</span> ? a.<span class="property">series_order</span> : (a.<span class="property">date</span> ? a.<span class="property">date</span>.<span class="title function_">valueOf</span>() : <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">const</span> orderB = b.<span class="property">series_order</span> !== <span class="literal">undefined</span> ? b.<span class="property">series_order</span> : (b.<span class="property">date</span> ? b.<span class="property">date</span>.<span class="title function_">valueOf</span>() : <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">return</span> orderA - orderB;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> seriesPosts;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>这个函数的作用是：</p>
+<ul>
+<li>根据文章的 <code>series</code> 字段，找出所有同系列的文章</li>
+<li>按照 <code>series_order</code> 字段排序（如果没有则按日期排序）</li>
+<li>只返回已发布的文章</li>
+</ul>
+<h2 id="3-创建系列导航模板">3 创建系列导航模板</h2>
+<p>接下来，我们需要创建一个模板文件，用于在文章末尾自动生成系列导航。</p>
+<p><strong>步骤</strong>：</p>
+<ol>
+<li>在 <code>source/_data/</code> 目录下创建文件 <code>post-body-end.swig</code>（如果目录不存在则创建）。</li>
+<li>文件内容如下：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- if page.series %&#125;</span><br><span class="line">  &#123;%- set seriesPosts = get_series_posts(page) %&#125;</span><br><span class="line">  &#123;%- if seriesPosts.length &gt; 0 %&#125;</span><br><span class="line">    &lt;div class=&quot;series-nav&quot;&gt;</span><br><span class="line">      &lt;hr&gt;</span><br><span class="line">      &lt;div class=&quot;series-title&quot;&gt;本系列文章&lt;/div&gt;</span><br><span class="line">      &lt;ul class=&quot;series-list&quot;&gt;</span><br><span class="line">        &#123;%- for seriesPost in seriesPosts %&#125;</span><br><span class="line">          &#123;%- set displayTitle = seriesPost.series_title or seriesPost.title %&#125;</span><br><span class="line">          &#123;%- if seriesPost.path === page.path %&#125;</span><br><span class="line">            &lt;li class=&quot;series-current&quot;&gt;第&#123;% if loop.index &lt; 10 %&#125;0&#123;% endif %&#125;&#123;&#123; loop.index &#125;&#125;篇 - &#123;&#123; displayTitle &#125;&#125;&lt;/li&gt;</span><br><span class="line">          &#123;%- else %&#125;</span><br><span class="line">            &lt;li&gt;&lt;a href=&quot;&#123;&#123; url_for(seriesPost.path) &#125;&#125;&quot;&gt;第&#123;% if loop.index &lt; 10 %&#125;0&#123;% endif %&#125;&#123;&#123; loop.index &#125;&#125;篇 - &#123;&#123; displayTitle &#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">          &#123;%- endif %&#125;</span><br><span class="line">        &#123;%- endfor %&#125;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">      &lt;hr&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &#123;%- endif %&#125;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>这个模板会：</p>
+<ul>
+<li>检查当前文章是否有 <code>series</code> 字段</li>
+<li>如果有，获取同系列的所有文章</li>
+<li>生成导航列表，当前文章会自动高亮显示</li>
+<li>自动为文章编号（第01篇、第02篇…）</li>
+</ul>
+<h2 id="4-配置-Next-主题">4 配置 Next 主题</h2>
+<p>现在需要告诉 Next 主题使用我们创建的模板文件。</p>
+<p><strong>步骤</strong>：</p>
+<ol>
+<li>打开 <code>themes/next/_config.yml</code> 文件。</li>
+<li>找到 <code>custom_file_path</code> 配置项。</li>
+<li>取消注释 <code>postBodyEnd</code> 这一行，并设置路径：</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment"># ... 其他配置 ...</span></span><br><span class="line">  <span class="attr">postBodyEnd:</span> <span class="string">source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="comment"># ... 其他配置 ...</span></span><br></pre></td></tr></table></figure>
+<p>这样 Next 主题就会在文章末尾自动注入我们的系列导航模板了。</p>
+<h2 id="5-在文章中使用">5 在文章中使用</h2>
+<p>配置完成后，就可以在文章中使用系列导航功能了。</p>
+<p><strong>步骤</strong>：</p>
+<ol>
+<li>打开要添加系列导航的文章文件。</li>
+<li>在 front matter 中添加以下字段：</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">你的文章标题</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2026-01-11 20:25:33</span></span><br><span class="line"><span class="attr">categories:</span> </span><br><span class="line">  <span class="bullet">-</span> <span class="string">博客搭建</span></span><br><span class="line"><span class="attr">tags:</span> </span><br><span class="line">  <span class="bullet">-</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">series:</span> <span class="string">我的博客搭好了</span>      <span class="comment"># 系列名称（同一系列使用相同值）</span></span><br><span class="line"><span class="attr">series_order:</span> <span class="number">11</span>            <span class="comment"># 文章在系列中的顺序</span></span><br><span class="line"><span class="attr">series_title:</span> <span class="string">怎么创建文章系列导航</span>  <span class="comment"># 可选，导航中显示的标题</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p><strong>字段说明</strong>：</p>
+<ul>
+<li><strong>series</strong>（必需）：系列的唯一标识名称，同一系列的所有文章必须使用相同的值</li>
+<li><strong>series_order</strong>（必需）：文章在系列中的顺序，用于排序</li>
+<li><strong>series_title</strong>（可选）：导航中显示的标题，如果不设置，将使用文章的 <code>title</code> 字段</li>
+</ul>
+<h2 id="6-样式说明">6 样式说明</h2>
+<p>系列导航的样式已经在 <code>source/_data/styles.styl</code> 中定义好了，包括：</p>
+<ul>
+<li>导航容器的边框和背景色</li>
+<li>当前文章的高亮样式</li>
+<li>链接的悬停效果</li>
+</ul>
+<p>如果你想要自定义样式，可以修改 <code>source/_data/styles.styl</code> 文件。</p>
+<h2 id="7-优势">7 优势</h2>
+<p>使用这个自动化方案后：</p>
+<ul>
+<li><strong>无需手动维护</strong>：新增文章时，只需在 front matter 中添加系列信息，导航会自动更新</li>
+<li><strong>自动排序</strong>：根据 <code>series_order</code> 自动排序，不用担心顺序问题</li>
+<li><strong>自动高亮</strong>：当前文章会自动高亮显示</li>
+<li><strong>统一风格</strong>：所有系列导航的样式保持一致</li>
+</ul>
+<p>再也不用每次新增文章都去修改其他文章的导航代码了！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/11/personal_blog_10/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -188,10 +360,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2026-01-11 10:25:33 / 修改时间：21:52:45" itemprop="dateCreated datePublished" datetime="2026-01-11T10:25:33+08:00">2026-01-11</time>
+              <time title="创建时间：2026-01-11 10:25:33" itemprop="dateCreated datePublished" datetime="2026-01-11T10:25:33+08:00">2026-01-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-01-15 00:22:03" itemprop="dateModified" datetime="2026-01-15T00:22:03+08:00">2026-01-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -208,7 +386,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.4k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -312,24 +490,6 @@
 </ul>
 </li>
 </ul>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/11/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/11/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/11/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/11/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li class="series-current">第10篇 - 怎么插入图片和视频</li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -372,10 +532,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2026-01-11 10:21:33 / 修改时间：22:01:51" itemprop="dateCreated datePublished" datetime="2026-01-11T10:21:33+08:00">2026-01-11</time>
+              <time title="创建时间：2026-01-11 10:21:33" itemprop="dateCreated datePublished" datetime="2026-01-11T10:21:33+08:00">2026-01-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-01-15 00:23:02" itemprop="dateModified" datetime="2026-01-15T00:23:02+08:00">2026-01-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -392,7 +558,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>850</span>
+              <span>634</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -420,24 +586,6 @@
 <h2 id="2-配置">2 配置</h2>
 <p>进入Hexo项目的根目录，编辑主题配置文件 <code>themes/next/_config.yml</code> ：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="comment"># 是否将“发表时间、更新时间、分类”和“字数、时长”分成两行显示</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 在文章页面显示“本文字数”、“阅读时长”等文字，如果为false，则不显示文字，但对应的统计数据仍然会计算并显示</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 在网站底部显示“站点总字数”和“站点阅读时长”的文字，如果是false，则不显示文字，但对应的统计数据仍然会计算并显示</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 平均词长，英文建议4，中文建议2</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">2</span></span><br><span class="line">  <span class="comment"># 平均阅读速度（词每分钟），中文建议300</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">300</span></span><br></pre></td></tr></table></figure>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/11/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/11/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/11/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li class="series-current">第09篇 - 添加统计字数和阅读时长的插件</li>
-    <li><a href="/2026/01/11/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -480,10 +628,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2026-01-11 10:18:33 / 修改时间：22:13:15" itemprop="dateCreated datePublished" datetime="2026-01-11T10:18:33+08:00">2026-01-11</time>
+              <time title="创建时间：2026-01-11 10:18:33" itemprop="dateCreated datePublished" datetime="2026-01-11T10:18:33+08:00">2026-01-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-01-15 00:22:56" itemprop="dateModified" datetime="2026-01-15T00:22:56+08:00">2026-01-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -500,14 +654,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -593,24 +747,6 @@
 <li><strong>使用永久链接</strong>：为避免因修改文章标题导致链接失效，建议安装 <code>hexo-abbrlink</code> 插件，为每篇文章生成一个唯一、永久的短链接。（还是晚点再研究，现在用不到）</li>
 </ul>
 <p>完成以上步骤后，你的博客就正式进入搜索引擎的视野了。这是一个持续的过程，保持内容更新和稳定访问，有助于提升收录效果。</p>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/11/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/11/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li class="series-current">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</li>
-    <li><a href="/2026/01/11/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/11/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -653,10 +789,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2026-01-11 10:12:26 / 修改时间：21:52:23" itemprop="dateCreated datePublished" datetime="2026-01-11T10:12:26+08:00">2026-01-11</time>
+              <time title="创建时间：2026-01-11 10:12:26" itemprop="dateCreated datePublished" datetime="2026-01-11T10:12:26+08:00">2026-01-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-01-15 00:22:51" itemprop="dateModified" datetime="2026-01-15T00:22:51+08:00">2026-01-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -673,7 +815,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>907</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -726,24 +868,6 @@
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">type: tags</span><br><span class="line"><span class="section">date: 2026-01-11 10:12:26</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
 <h3 id="3-3-部署">3.3 部署</h3>
 <p>老规矩： <code>hexo c &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/11/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li class="series-current">第07篇 - 怎么制作/about/、/categories/、/tags/页面</li>
-    <li><a href="/2026/01/11/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/11/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/11/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -786,10 +910,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2026-01-11 10:07:33 / 修改时间：21:52:20" itemprop="dateCreated datePublished" datetime="2026-01-11T10:07:33+08:00">2026-01-11</time>
+              <time title="创建时间：2026-01-11 10:07:33" itemprop="dateCreated datePublished" datetime="2026-01-11T10:07:33+08:00">2026-01-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-01-15 00:22:47" itemprop="dateModified" datetime="2026-01-15T00:22:47+08:00">2026-01-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -806,7 +936,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>897</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -839,24 +969,6 @@
 <p>注意：这是该主题的全局配置，优先级较低。</p>
 <p><strong>最佳实践：</strong> 可以先进行全局配置。然后如果对某篇文章有特殊需求，再进行局部配置。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Automatically add list number to toc.</span></span><br><span class="line">  <span class="attr">number:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># If true, all words will placed on next lines if header width longer then sidebar width.</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># If true, all level of TOC in a post will be displayed, rather than the activated part of it.</span></span><br><span class="line">  <span class="attr">expand_all:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Maximum heading depth of generated toc.</span></span><br><span class="line">  <span class="attr">max_depth:</span> <span class="number">6</span></span><br></pre></td></tr></table></figure>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li class="series-current">第06篇 - 怎么给文章分类、打标签、展示目录</li>
-    <li><a href="/2026/01/11/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/11/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/11/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/11/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -907,7 +1019,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 21:52:10" itemprop="dateModified" datetime="2026-01-11T21:52:10+08:00">2026-01-11</time>
+                <time title="修改时间：2026-01-15 00:22:41" itemprop="dateModified" datetime="2026-01-15T00:22:41+08:00">2026-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -925,7 +1037,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -960,24 +1072,6 @@
 <h2 id="3-更换成其他主题">3 更换成其他主题</h2>
 <p>方法和更换NexT主题类似，比如更换为 fluid 主题，步骤如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入 Hexo 项目目录</span></span><br><span class="line"><span class="built_in">cd</span> hexo_blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 克隆主题到 themes 目录</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/fluid-dev/hexo-theme-fluid themes/fluid</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除themes/fluid/目录下的 .git 文件夹，防止与hexo_blog目录所属的git仓库冲突</span></span><br><span class="line"><span class="built_in">rm</span> -rf .git/</span><br></pre></td></tr></table></figure>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li class="series-current">第05篇 - 更换Hexo主题</li>
-    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -1028,7 +1122,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 21:52:04" itemprop="dateModified" datetime="2026-01-11T21:52:04+08:00">2026-01-11</time>
+                <time title="修改时间：2026-01-15 00:22:34" itemprop="dateModified" datetime="2026-01-15T00:22:34+08:00">2026-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1046,14 +1140,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
+              <span>1.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -1077,24 +1171,6 @@
 <p>我的Hexo项目目录名称为 <code>hexo_blog</code>，在该目录下，直接用git命令将该目录初始化为一个git仓库，然后提交所有的源码到Gitee上了。<br>
 以下是我的hexo_blog目录下的.gitignore文件内容，忽略了一些不需要备份的文件和文件夹：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">db.json</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">.deploy_git/</span><br><span class="line">_multiconfig.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># Log file</span></span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">/logs/</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">logs/*</span><br><span class="line"></span><br><span class="line"><span class="comment"># Package Files</span></span><br><span class="line">*.war</span><br><span class="line">*.nar</span><br><span class="line">*.ear</span><br><span class="line">*.zip</span><br><span class="line">*.tar</span><br><span class="line">*.tar.gz</span><br><span class="line">*.rar</span><br><span class="line">*/dist/</span><br><span class="line">*/build/</span><br><span class="line">*/bin/</span><br><span class="line"></span><br><span class="line"><span class="comment"># virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml</span></span><br><span class="line">hs_err_pid*</span><br><span class="line"><span class="comment"># Windows:</span></span><br><span class="line">Thumbs.db</span><br><span class="line">ehthumbs.db</span><br><span class="line">desktop.ini</span><br><span class="line"><span class="comment"># My configurations:</span></span><br><span class="line">db.ini</span><br><span class="line">deploy_key_rsa</span><br><span class="line"><span class="comment">#svn</span></span><br><span class="line">.svn/</span><br><span class="line">*/.svn/</span><br><span class="line"></span><br><span class="line"><span class="comment">#idea的target文件夹</span></span><br><span class="line">target/*</span><br><span class="line">*/target/*</span><br><span class="line">out/*</span><br><span class="line">*/out/*</span><br><span class="line"></span><br><span class="line"><span class="comment">### IntelliJ IDEA ###</span></span><br><span class="line">.idea</span><br><span class="line">.idea/*</span><br><span class="line">*.iws</span><br><span class="line">*.iml</span><br><span class="line">*.ipr</span><br><span class="line">*.lock</span><br><span class="line">rebel.xml</span><br><span class="line"></span><br><span class="line">HELP.md</span><br><span class="line">target/</span><br><span class="line">!.mvn/wrapper/maven-wrapper.jar</span><br><span class="line">!**/src/main/**/target/</span><br><span class="line"></span><br><span class="line"><span class="comment">### STS ###</span></span><br><span class="line">.apt_generated</span><br><span class="line">.classpath</span><br><span class="line">.factorypath</span><br><span class="line">.project</span><br><span class="line">.settings</span><br><span class="line">.springBeans</span><br><span class="line">.sts4-cache</span><br><span class="line"></span><br><span class="line"><span class="comment">### NetBeans ###</span></span><br><span class="line">/nbproject/private/</span><br><span class="line">/nbbuild/</span><br><span class="line">/dist/</span><br><span class="line">/nbdist/</span><br><span class="line">/.nb-gradle/</span><br><span class="line">build/</span><br><span class="line">!**/src/main/**/build/</span><br><span class="line"></span><br><span class="line"><span class="comment">### VS Code ###</span></span><br><span class="line">.vscode/</span><br><span class="line"></span><br><span class="line"><span class="comment">### test</span></span><br><span class="line">*-aitest*</span><br><span class="line">**/test/</span><br><span class="line">**/test/*</span><br><span class="line">**/src/test/</span><br><span class="line">**/src/test/**</span><br><span class="line"></span><br><span class="line"><span class="comment">### temp ignore ###</span></span><br><span class="line">*.cache</span><br><span class="line">*.diff</span><br><span class="line">*.patch</span><br><span class="line">*.tmp</span><br><span class="line">*.java~</span><br><span class="line">*.properties~</span><br><span class="line">*.xml~</span><br><span class="line">sessionStore</span><br><span class="line"></span><br><span class="line"><span class="comment">### system ignore ###</span></span><br><span class="line">Servers</span><br><span class="line">.metadata</span><br><span class="line">upload</span><br><span class="line">gen_code</span><br><span class="line">application-preview.yml</span><br><span class="line"></span><br><span class="line"><span class="comment">### node ###</span></span><br><span class="line">node_modules/</span><br><span class="line"></span><br><span class="line"><span class="comment"># python代码缓存</span></span><br><span class="line">__pycache__/</span><br><span class="line">**/__pycache__/</span><br><span class="line">**/__pycache__/*</span><br><span class="line"></span><br><span class="line">**/nohup.out</span><br><span class="line"></span><br><span class="line">.github/</span><br></pre></td></tr></table></figure>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/08/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li class="series-current">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -1145,7 +1221,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 21:51:57" itemprop="dateModified" datetime="2026-01-11T21:51:57+08:00">2026-01-11</time>
+                <time title="修改时间：2026-01-15 00:22:27" itemprop="dateModified" datetime="2026-01-15T00:22:27+08:00">2026-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1163,7 +1239,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1228,23 +1304,6 @@
 <h3 id="解决方案-4">解决方案</h3>
 <p>将所有的markdown标题的级别降低一级，就可以正常点击子目录链接了。总之，不要出现 一级标题，比如 <code># title1</code>。</p>
 <p>未完待续…</p>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li><a href="/2026/01/08/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li class="series-current">第03篇 - 搭建过程之：一路踩坑</li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -1295,7 +1354,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 21:51:38" itemprop="dateModified" datetime="2026-01-11T21:51:38+08:00">2026-01-11</time>
+                <time title="修改时间：2026-01-15 00:22:17" itemprop="dateModified" datetime="2026-01-15T00:22:17+08:00">2026-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1313,7 +1372,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
+              <span>1.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1413,376 +1472,6 @@
 <p>博客访问地址是：<a href="https://wittzh.github.io">https://wittzh.github.io</a></p>
 <p>下一篇，我要介绍下搭建过程中遇到的一些坑，以及如何解决。对大家很有参考意义。</p>
 <p>最后，再记录下Hexo官方文档地址 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-    <li class="series-current">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/08/personal_blog_01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Witt">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Witt的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2026/01/08/personal_blog_01/" class="post-title-link" itemprop="url">我的博客搭好了！过程简直像在打游戏通关 - 第01篇</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2026-01-08 20:28:33" itemprop="dateCreated datePublished" datetime="2026-01-08T20:28:33+08:00">2026-01-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-11 21:51:30" itemprop="dateModified" datetime="2026-01-11T21:51:30+08:00">2026-01-11</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <div class="title">第01篇 - 选择困难症发作</div>
-<blockquote>
-<p>说起来你可能不信，我为了搞个博客，差点和一只“章鱼猫”打起来。</p>
-</blockquote>
-<p>行吧，我承认，作为一个写Java和Python的后端程序员，我早就该有个自己的技术平台了。但我知道的，这种事就像整理房间——总觉得很重要，但总是“明天再说”。</p>
-<p>直到我决定认真搞个自己的地盘时，我才发现，这简直是一场打怪升级的游戏。</p>
-<h2 id="1-短视频还是文章">1 短视频还是文章</h2>
-<p>我具有“SpringCloud微服务+AI工程化+Python后端”的深度背景。询问了DeepSeek，它帮我分析了一下，给了我一些的建议。</p>
-<h3 id="1-1-📊-对比分析：为什么“文章”更适合起步">1.1 📊 对比分析：为什么“文章”更适合起步</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">对比维度</th>
-<th style="text-align:left"><strong>文章/深度图文</strong></th>
-<th style="text-align:left"><strong>短视频</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>核心优势</strong></td>
-<td style="text-align:left"><strong>深度</strong>、系统性、易于展示复杂逻辑和代码，建立<strong>专业权威</strong>。</td>
-<td style="text-align:left"><strong>直观</strong>、传播快、易破圈，建立<strong>个人形象</strong>。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>匹配我的内容</strong></td>
-<td style="text-align:left">完美匹配源码解析、架构设计、RAG优化、工作流编排等技术细节。</td>
-<td style="text-align:left">适合演示最终效果、展示工具操作、提炼一个核心结论或“钩子”。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>所需技能</strong></td>
-<td style="text-align:left">我的<strong>现有优势</strong>（逻辑组织、技术写作）。</td>
-<td style="text-align:left"><strong>需额外学习</strong>（拍摄、剪辑、配音、剧本撰写）。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>时间投入</strong></td>
-<td style="text-align:left">灵活，可碎片化时间构思和撰写。</td>
-<td style="text-align:left">相对固定，制作1分钟视频可能需数小时。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>起步难度</strong></td>
-<td style="text-align:left"><strong>低</strong>。打开文档即可开始。</td>
-<td style="text-align:left"><strong>中高</strong>。需跨越制作门槛和“表演”心理关。</td>
-</tr>
-</tbody>
-</table>
-<p>基于以上分析，一个高效且可持续的起步策略是：</p>
-<p><strong>第一阶段：以文章为核心，建立专业地基</strong></p>
-<ol>
-<li>
-<p><strong>主攻平台</strong>：在<strong>知乎、掘金</strong>或我的个人技术博客上，围绕我最硬核、最成体系的经验，写2-3篇深度文章。</p>
-</li>
-<li>
-<p><strong>目标</strong>：<strong>不求爆款，但求扎实</strong>。这几篇文章将成为我的“专业名片”，任何对我领域感兴趣的人看完都会认可我的实力。</p>
-</li>
-</ol>
-<p><strong>第二阶段：制作“信息流短视频”</strong></p>
-<ol>
-<li>
-<p><strong>形式</strong>：无需复杂拍摄。直接使用 <strong>“剪映”</strong> 等工具的<strong>图文生成视频</strong>功能，将我的深度文章提炼成 <strong>“黄金三段式”</strong> 短视频：</p>
-<ul>
-<li><strong>开头 (3秒)</strong>：提出一个具体痛点。比如，“做AI微服务，工作流总是乱成一团？”</li>
-<li><strong>中间 (50秒)</strong>：展示我最核心的一张架构图/代码片段，并配上关键结论的AI配音解说。</li>
-<li><strong>结尾 (7秒)</strong>：引导去读完整文章。</li>
-</ul>
-</li>
-<li>
-<p><strong>发布平台</strong>：同步发布到<strong>小红书</strong>和<strong>快手</strong>。这两个平台对这类干货信息流内容接受度高，且能挂载原文链接。</p>
-</li>
-</ol>
-<h3 id="1-2-💡-关键策略与心态">1.2 💡 关键策略与心态</h3>
-<ul>
-<li><strong>一鱼多吃</strong></li>
-<li><strong>耐心积累</strong></li>
-<li><strong>建立闭环</strong></li>
-</ul>
-<p>以上是AI给出的建议，我基本认可它的想法，不过现在，我还是决定先写文章，毕竟短视频的制作成本比较高。</p>
-<h2 id="2-写文章，摆在面前的路好像有很多条">2 写文章，摆在面前的路好像有很多条</h2>
-<ul>
-<li><strong>住别人的房子（CSDN、掘金等）</strong>：方便是真方便，拎包入住。但规矩多，装修风格也不能自己定，总觉得不是自己的家。</li>
-<li><strong>自己买地盖房（买云服务器）</strong>：这控制权绝对满分，想盖成啥样都行。但得自己付水电费（服务器费用），还得跑一堆手续（备案），想想就头大。</li>
-<li><strong>找个免费空地搭帐篷（静态博客+免费托管）</strong>：嗯，听起来在成本和自由之间找到了完美平衡？就它了！暂时先选它，等有时间再扩展下其他方案。</li>
-</ul>
-<h2 id="3-静态博客站点部署工具的对比">3 静态博客站点部署工具的对比</h2>
-<p>经过一番（主要是询问AI、搜索引擎、论坛）探险，我找到了这几种主流的<strong>静态站点生成器</strong>：Jekyll、VuePress、Hexo。</p>
-<p>同时也找到了几种主流的<strong>静态博客站点托管平台</strong>：GitHub Pages、Netlify、Vercel、Gitee Pages等。</p>
-<p>并且进行了对比分析，整理了一份对比表格。</p>
-<h3 id="3-1-静态站点生成器对比">3.1 静态站点生成器对比</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">特性</th>
-<th style="text-align:left"><strong>Jekyll</strong></th>
-<th style="text-align:left"><strong>VuePress</strong></th>
-<th style="text-align:left"><strong>Hexo</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>核心语言</strong></td>
-<td style="text-align:left">Ruby</td>
-<td style="text-align:left">JavaScript (基于 Vue)</td>
-<td style="text-align:left">Node.js</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>上手难度</strong></td>
-<td style="text-align:left">中等，需熟悉Ruby环境</td>
-<td style="text-align:left"><strong>简单</strong>，尤其适合Vue开发者</td>
-<td style="text-align:left"><strong>简单</strong>，Node.js生态友好</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>构建速度</strong></td>
-<td style="text-align:left">中等（随内容增多可能变慢）</td>
-<td style="text-align:left">快速</td>
-<td style="text-align:left">快速</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>主题与插件</strong></td>
-<td style="text-align:left">主题和插件生态丰富</td>
-<td style="text-align:left">插件系统较小，专注文档</td>
-<td style="text-align:left">主题和插件生态非常丰富</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>核心优势</strong></td>
-<td style="text-align:left">GitHub Pages <strong>原生支持</strong>，集成最简。</td>
-<td style="text-align:left"><strong>技术文档友好</strong>，默认主题清晰，支持Vue组件。</td>
-<td style="text-align:left"><strong>社区活跃</strong>，主题极多，适合快速搭建美观博客。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>主要适用场景</strong></td>
-<td style="text-align:left">个人博客、项目文档、小型网站</td>
-<td style="text-align:left"><strong>技术文档、API手册</strong>、也可用于博客</td>
-<td style="text-align:left"><strong>个人博客</strong>、作品集</td>
-</tr>
-</tbody>
-</table>
-<p>如果熟悉Node.js生态，用Hexo能快速搭建；如果想专注于技术文档，VuePress是绝佳选择。最终我选择了Hexo，因为我并非要写技术文档，只是想分享一些技术经验和思考。</p>
-<h3 id="3-2-技术文档站和个人技术博客对比">3.2 技术文档站和个人技术博客对比</h3>
-<p>再啰嗦一句，技术文档站和个人技术博客的区别。简单来说，<strong>技术文档站是为“产品”服务的手册，而个人技术博客是为“个人”服务的日记</strong>。对比如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">对比维度</th>
-<th style="text-align:left"><strong>技术文档站 (Documentation Site)</strong></th>
-<th style="text-align:left"><strong>个人技术博客 (Personal Tech Blog)</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>核心目的</strong></td>
-<td style="text-align:left"><strong>系统性说明</strong>：解释产品/工具/框架的<strong>功能、使用方法和原理</strong>。目标是降低用户使用门槛。</td>
-<td style="text-align:left"><strong>个性化表达</strong>：分享<strong>个人见解、学习历程、解决方案和思考</strong>。目标是建立个人品牌与连接。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>内容性质</strong></td>
-<td style="text-align:left"><strong>客观、准确、完整</strong>。类似“说明书”，强调权威性，通常与项目版本绑定。</td>
-<td style="text-align:left"><strong>主观、灵活、深入</strong>。类似“笔记”或“评论”，强调启发性、时效性和个人视角。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>主要读者</strong></td>
-<td style="text-align:left"><strong>用户、开发者、集成者</strong>。他们带着明确问题（“How-to”）来寻找答案。</td>
-<td style="text-align:left"><strong>同行、学习者、潜在雇主/合作者</strong>。他们被你的观点、经验或技术深度所吸引。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>组织结构</strong></td>
-<td style="text-align:left"><strong>树状、层级清晰</strong>。通常按功能模块、用户旅程（入门-&gt;高级）组织，有严格的导航和搜索。</td>
-<td style="text-align:left"><strong>时间线、标签/分类</strong>。通常按发布时间倒序排列，通过分类和标签关联内容。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>写作风格</strong></td>
-<td style="text-align:left"><strong>正式、简洁、一致</strong>。多用被动语态和陈述句，力求无歧义。通常有统一的模板和规范。</td>
-<td style="text-align:left"><strong>生动、自由、有个人特色</strong>。可以包含故事、猜想、失败经历和个人感受。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>必备要素</strong></td>
-<td style="text-align:left">API参考、安装指南、教程、故障排除、版本历史等。</td>
-<td style="text-align:left">个人简介、评论互动、订阅功能（RSS/邮件）、社交媒体链接等。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>工具倾向</strong></td>
-<td style="text-align:left"><strong>VuePress、Docusaurus、GitBook</strong>等，它们天生为文档设计，支持版本化、多语言、API自动生成等。</td>
-<td style="text-align:left"><strong>Hexo、Jekyll、Hugo</strong>等，它们主题丰富，适合时间流展示，侧重于写作和展示的便捷性。</td>
-</tr>
-</tbody>
-</table>
-<h3 id="3-3-静态博客站点托管平台对比">3.3 静态博客站点托管平台对比</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">平台名称</th>
-<th style="text-align:left">核心特点 / 与 GitHub Pages 对比</th>
-<th style="text-align:left">免费情况与访问速度</th>
-<th style="text-align:left">主要适用场景</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Gitee Pages</strong></td>
-<td style="text-align:left">国内版GitHub，操作逻辑与GitHub Pages几乎一致。<strong>缺点</strong>：免费版对公开仓库有手动开启、强制审核等限制。</td>
-<td style="text-align:left">完全免费，国内访问<strong>极快</strong>。</td>
-<td style="text-align:left">个人博客、项目文档，希望<strong>零成本、快速起步</strong>的国内访问站点。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>腾讯云 Webify</strong> / <strong>EdgeOne Pages</strong></td>
-<td style="text-align:left">腾讯云的静态托管服务，与Coding（腾讯旗下）深度集成，自动化构建部署能力更强。EdgeOne Pages是较新的产品。</td>
-<td style="text-align:left">通常有免费额度，超出需付费。国内访问速度快。</td>
-<td style="text-align:left">追求<strong>自动化部署和更专业托管</strong>，或已在腾讯云生态内的项目。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Coding Pages</strong></td>
-<td style="text-align:left">Coding.net推出的静态网站托管服务。集成在其DevOps平台内。</td>
-<td style="text-align:left">提供免费额度。国内访问速度快。</td>
-<td style="text-align:left">团队协作开发，需要将文档/博客与CI/CD流水线结合的场景。</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Sealos / 云原生方案</strong></td>
-<td style="text-align:left">通过容器部署静态网站，需要自行配置Nginx等。<strong>优点</strong>：控制权极高，可轻松扩展为全栈应用。</td>
-<td style="text-align:left">有非常低的成本（约每月3-5元）。国内访问快。</td>
-<td style="text-align:left"><strong>需要扩展性</strong>（未来可能加后端、数据库），熟悉容器技术的开发者。</td>
-</tr>
-</tbody>
-</table>
-<p>我一开始选择了Gitee Pages，因为在中国访问比较友好，访问速度快，稳定性好。</p>
-<p>但是，折腾了半天，才发现Gitee竟然停止Gitee Pages服务了！我的天老爷。最后，我想了下，还是决定使用GitHub Pages。因为现在大家都能科学上网，访问GitHub Pages也没有问题，访问速度也慢不了多少。并且它完全免费，适合个人起步。将来，如果对网站的控制权和未来扩展有更高要求（比如博客平台需要前后端配合），我会考虑迁移到Sealos，或者干脆直接迁到阿里云、腾讯云等云服务器上。</p>
-<p><strong>提升国内访问速度的解决方案</strong>：如果发现访客体验不佳，可以考虑以下方案：</p>
-<ul>
-<li>
-<p><strong>使用CDN加速</strong>：将GitHub Pages作为源站，通过国内的CDN服务（如阿里云CDN）或提供全球加速的免费平台（如Netlify）进行加速，能显著提升访问速度。</p>
-</li>
-<li>
-<p><strong>考虑国内托管平台</strong>。</p>
-</li>
-</ul>
-<h2 id="4-🚀-总结与下一步">4 🚀 总结与下一步</h2>
-<ul>
-<li><strong>重点选择生成器</strong>：<strong>Hexo</strong>（快速搭建博客）。</li>
-<li><strong>明确网络影响</strong>：用<strong>GitHub Pages</strong>托管，需提前了解其国内访问的局限性，并知晓CDN等优化手段。</li>
-<li><strong>高效结合</strong>：用生成器在本地写作（<code>Markdown</code>），用Git管理，通过<code>GitHub Actions</code>自动构建并部署到GitHub Pages。</li>
-</ul>
-<p>最终，我锁定了黄金组合：<strong>Hexo + GitHub Pages</strong>。简单说，就是用Hexo这个工具把我写的Markdown笔记变成漂亮的网页，然后扔到GitHub提供的免费服务器上。</p>
-<p>选它主要是因为：<strong>免费、和我的程序员工作流完美契合、逼格够高</strong>。虽然知道它在国内访问可能有点慢，而且不太容易被百度搜到，但先搞起来再说吧！</p>
-<p>不过要提醒大家，Github pages 站点，百度理论上是不搜索的（如果介意这一点，最好不要使用它），谷歌和必应都能搜到，只要经常提交站点地图就行。这个后面会详细介绍。</p>
-<p>好了，今天就到这里。下一篇文章，我会详细介绍，我是如何一步步部署好我的博客站点的。</p>
-<hr>
-<p>后续补充：</p>
-<ol>
-<li>实际测试下来，在没有科学上网的情况下，访问速度也挺快的。</li>
-</ol>
-<hr>
-<div class="series-nav">
-  <hr>
-  <div class="series-title">本系列文章</div>
-  <ul class="series-list">
-    <li class="series-current">第01篇 - 选择困难症发作</li>
-    <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-    <li><a href="/2026/01/10/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
-    <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-    <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-    <li><a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-    <li><a href="/2026/01/10/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-    <li><a href="/2026/01/10/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-    <li><a href="/2026/01/10/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-    <li><a href="/2026/01/10/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-  </ul>
-  <hr>
-</div>
 
       
     </div>
@@ -1869,7 +1558,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1927,13 +1616,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">18k</span>
+    <span title="站点总字数">21k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">16 分钟</span>
+    <span title="站点阅读时长">19 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
