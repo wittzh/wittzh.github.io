@@ -9,64 +9,8 @@
 
 
     <url>
-        <loc>https://wittzh.github.io/2026/01/08/tech_blog/personal_blog_01/</loc>
-        <lastmod>2026-01-16T14:46:04.101Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2025/12/29/hello/hello-world/</loc>
-        <lastmod>2026-01-16T14:42:53.914Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_02/</loc>
-        <lastmod>2026-01-16T14:30:31.423Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_11/</loc>
-        <lastmod>2026-01-15T06:32:07.913Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_05/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_04/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_06/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_03/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
+        <loc>https://wittzh.github.io/2026/01/16/code_life/code_life_001/</loc>
+        <lastmod>2026-01-16T15:02:37.032Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,15 +18,7 @@
 
     <url>
         <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_07/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_09/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
+        <lastmod>2026-01-16T14:48:09.281Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -90,7 +26,15 @@
 
     <url>
         <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_08/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
+        <lastmod>2026-01-16T14:48:09.281Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_09/</loc>
+        <lastmod>2026-01-16T14:48:09.281Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -98,7 +42,71 @@
 
     <url>
         <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_10/</loc>
-        <lastmod>2026-01-15T05:56:14.886Z</lastmod>
+        <lastmod>2026-01-16T14:48:09.281Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_11/</loc>
+        <lastmod>2026-01-16T14:48:09.281Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2025/12/29/hello/hello-world/</loc>
+        <lastmod>2026-01-16T14:48:09.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/08/tech_blog/personal_blog_01/</loc>
+        <lastmod>2026-01-16T14:48:09.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_02/</loc>
+        <lastmod>2026-01-16T14:48:09.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_03/</loc>
+        <lastmod>2026-01-16T14:48:09.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_04/</loc>
+        <lastmod>2026-01-16T14:48:09.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/10/tech_blog/personal_blog_05/</loc>
+        <lastmod>2026-01-16T14:48:09.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_06/</loc>
+        <lastmod>2026-01-16T14:48:09.280Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
