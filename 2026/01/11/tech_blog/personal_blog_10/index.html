@@ -20,22 +20,24 @@
     var CONFIG = {"hostname":"wittzh.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="第03篇 - 搭建过程之：一路踩坑  搭建过程比较繁琐，我一路踩了很多坑。分享出来，希望你能少走弯路，一站到底。  1 BOSS战——神秘的“章鱼猫” 问题描述 接下来是把博客放到网上。我在GitHub上建了个仓库，名字必须严格遵守“用户名.github.io”的格式，不然不好使。配置好Hexo的设置后，我庄重地输入了部署三连： 1hexo clean &amp;&amp; hexo genera">
+  <meta name="description" content="第10篇 - 怎么插入图片和视频 1 插入图片 1.1 使用本地相对路径（适合本地图片）使用图床 这是最直接的方式，但需要注意路径。 步骤：   在Hexo项目根目录的 source 文件夹下，创建一个专门存放图片的文件夹，例如 images。   将你的图片（如 my-photo.jpg）放入 source&#x2F;images&#x2F; 文件夹。   在文章的 Markdown 文件中，使用以下语法插入： 1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的博客搭好了！过程简直像在打游戏通关 - 第03篇">
-<meta property="og:url" content="https://wittzh.github.io/2026/01/10/personal_blog_03/index.html">
+<meta property="og:title" content="我的博客搭好了！过程简直像在打游戏通关 - 第10篇">
+<meta property="og:url" content="https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_10/index.html">
 <meta property="og:site_name" content="Witt的博客">
-<meta property="og:description" content="第03篇 - 搭建过程之：一路踩坑  搭建过程比较繁琐，我一路踩了很多坑。分享出来，希望你能少走弯路，一站到底。  1 BOSS战——神秘的“章鱼猫” 问题描述 接下来是把博客放到网上。我在GitHub上建了个仓库，名字必须严格遵守“用户名.github.io”的格式，不然不好使。配置好Hexo的设置后，我庄重地输入了部署三连： 1hexo clean &amp;&amp; hexo genera">
+<meta property="og:description" content="第10篇 - 怎么插入图片和视频 1 插入图片 1.1 使用本地相对路径（适合本地图片）使用图床 这是最直接的方式，但需要注意路径。 步骤：   在Hexo项目根目录的 source 文件夹下，创建一个专门存放图片的文件夹，例如 images。   将你的图片（如 my-photo.jpg）放入 source&#x2F;images&#x2F; 文件夹。   在文章的 Markdown 文件中，使用以下语法插入： 1">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-01-10T12:38:33.000Z">
+<meta property="og:image" content="https://wittzh.github.io/images/1.png">
+<meta property="article:published_time" content="2026-01-11T02:25:33.000Z">
 <meta property="article:modified_time" content="2026-01-15T05:56:14.886Z">
 <meta property="article:author" content="Witt">
 <meta property="article:tag" content="GitHub Pages">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="个人技术博客搭建">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wittzh.github.io/images/1.png">
 
-<link rel="canonical" href="https://wittzh.github.io/2026/01/10/personal_blog_03/">
+<link rel="canonical" href="https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_10/">
 
 
 <script id="page-configurations">
@@ -48,7 +50,7 @@
   };
 </script>
 
-  <title>我的博客搭好了！过程简直像在打游戏通关 - 第03篇 | Witt的博客</title>
+  <title>我的博客搭好了！过程简直像在打游戏通关 - 第10篇 | Witt的博客</title>
   
 
 
@@ -173,7 +175,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/10/personal_blog_03/">
+    <link itemprop="mainEntityOfPage" href="https://wittzh.github.io/2026/01/11/tech_blog/personal_blog_10/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -186,7 +188,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          我的博客搭好了！过程简直像在打游戏通关 - 第03篇
+          我的博客搭好了！过程简直像在打游戏通关 - 第10篇
         </h1>
 
         <div class="post-meta">
@@ -196,7 +198,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2026-01-10 20:38:33" itemprop="dateCreated datePublished" datetime="2026-01-10T20:38:33+08:00">2026-01-10</time>
+              <time title="创建时间：2026-01-11 10:25:33" itemprop="dateCreated datePublished" datetime="2026-01-11T10:25:33+08:00">2026-01-11</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -221,7 +223,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.4k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -240,52 +242,91 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <div class="title">第03篇 - 搭建过程之：一路踩坑</div>
-<blockquote>
-<p>搭建过程比较繁琐，我一路踩了很多坑。分享出来，希望你能少走弯路，一站到底。</p>
-</blockquote>
-<h2 id="1-BOSS战——神秘的“章鱼猫”">1 BOSS战——神秘的“章鱼猫”</h2>
-<h3 id="问题描述">问题描述</h3>
-<p>接下来是把博客放到网上。我在GitHub上建了个仓库，名字必须严格遵守“<a target="_blank" rel="noopener" href="http://xn--eqr924avxo.github.io">用户名.github.io</a>”的格式，不然不好使。配置好Hexo的设置后，我庄重地输入了部署三连：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
-<p>看着命令行滚动，我心里满是期待。打开我的专属网址……然后我就看到了它：<strong>一屏由各种符号和空格组成的、极其抽象的“章鱼猫”（GitHub吉祥物）</strong>。</p>
-<p>我的博客呢？我那么大一个博客呢？</p>
-<p>那一刻的心情，就像我精心准备了礼物送给朋友，结果他拆开一看，是个空盒子。</p>
-<h3 id="排查BUG">排查BUG</h3>
+        <div class="title">第10篇 - 怎么插入图片和视频</div>
+<h2 id="1-插入图片">1 插入图片</h2>
+<h3 id="1-1-使用本地相对路径（适合本地图片）使用图床">1.1 使用本地相对路径（适合本地图片）使用图床</h3>
+<p>这是最直接的方式，但需要注意路径。</p>
+<p><strong>步骤</strong>：</p>
 <ol>
-<li><strong>看状态</strong>：GitHub说构建成功了。</li>
-<li><strong>看仓库</strong>：文件好像也传上去了。</li>
-<li><strong>看设置</strong>：啊哈！破案了！原来GitHub Pages默认从仓库的 <code>/docs</code> 文件夹里找网页文件，但Hexo把文件都生成在根目录。这两兄弟根本没对上暗号！</li>
+<li>
+<p>在Hexo项目根目录的 <code>source</code> 文件夹下，创建一个专门存放图片的文件夹，例如 <code>images</code>。</p>
+</li>
+<li>
+<p>将你的图片（如 <code>my-photo.jpg</code>）放入 <code>source/images/</code> 文件夹。</p>
+</li>
+<li>
+<p>在文章的 Markdown 文件中，使用以下语法插入：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">这是一张图片的替代文字（alt text）</span>](<span class="link">/images/my-photo.jpg</span>)</span><br></pre></td></tr></table></figure>
+<p><em>注：开头的 <code>/</code> 表示从 Hexo项目根目录 开始查找。</em></p>
+<p>测试图片：</p>
+<p><img src="/images/1.png" alt="测试图片"></p>
+</li>
 </ol>
-<h3 id="解决方案">解决方案</h3>
-<p>进入 <a target="_blank" rel="noopener" href="https://github.com/wittzh/wittzh.github.io">https://github.com/wittzh/wittzh.github.io</a> 仓库页面，进入Settings -&gt; Pages，在Branch下的“Select folder”中，将 <code>/docs</code> 改成 <code>/ (root)</code>，等了一分钟再刷新——<strong>我的博客，它活了！</strong></p>
-<h2 id="2-设置-TOC-来文章目录，没用">2 设置<code>[TOC]</code>来文章目录，没用</h2>
-<h3 id="问题描述-2">问题描述</h3>
-<p>因为Hexo的文章全部是markdown格式，我想着按照markdown的语法，在文章中添加<code>[TOC]</code>来展示目录，但是没用。</p>
-<h3 id="排查BUG-2">排查BUG</h3>
-<p>查了资料发现，在 Hexo 中，[TOC] 默认是无效的，因为 Hexo 使用的 Markdown 渲染器不支持原生 [TOC] 语法。</p>
-<p>不过，Hexo 已经内置了目录生成功能。只需要启用就行了。可以在文章中的 Front-matter 中配置，也可以在next主题目录中的 _config.yml 中进行全局配置。</p>
-<h3 id="解决方案-2">解决方案</h3>
-<p>详细的配置方法，请参考我的另一篇文章：<a href="/2026/01/10/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></p>
-<h2 id="3-文章目录的链接，点击无效">3 文章目录的链接，点击无效</h2>
-<h3 id="问题描述-3">问题描述</h3>
-<p>在我的博客文章中，我启用了目录插件，期望能在文章中展示目录。但是，当我点击目录中的链接时，发现没有跳转。</p>
-<h3 id="排查BUG-3">排查BUG</h3>
-<p>各种排查，各种重新部署，都没有用。</p>
-<p>一开始我使用的landscape默认主题，然后尝试了改为next主题，没用，又改为fluid主题，还是没用。</p>
-<p>于是我担心是_config.yml中的设置错误了，一一将设置还原为默认值，结果还是没有用。</p>
-<p>最后没办法了，我只能重新安装Hexo，然后从新开始搭建博客，这才解决了目录链接点击无效的问题。</p>
-<p>我猜测是因为在一开始我让AI帮我做了一些配置，然后AI改了Hexo中的某些文件，导致了这个问题。</p>
-<h3 id="解决方案-3">解决方案</h3>
-<p>重装Hexo。</p>
-<h2 id="4-文章的子目录的链接，点击无效">4 文章的子目录的链接，点击无效</h2>
-<h3 id="问题描述-4">问题描述</h3>
-<p>在我的博客文章中，当我点击目录打开了子目录，然后点击子目录链接时，发现没有跳转。</p>
-<h3 id="排查BUG-4">排查BUG</h3>
-<p>可能是我在文章头部添加了标题 <code>&lt;div class=&quot;title&quot;&gt;第03篇 - 搭建过程之：一路踩坑&lt;/div&gt;</code>，导致在渲染markdown目录时出错了。</p>
-<h3 id="解决方案-4">解决方案</h3>
-<p>将所有的markdown标题的级别降低一级，就可以正常点击子目录链接了。总之，不要出现 一级标题，比如 <code># title1</code>。</p>
-<p>未完待续…</p>
+<p><strong>优点</strong>：管理简单，所有资源都在本地。</p>
+<p><strong>缺点</strong>：如果图片过多，会增加项目体积。博客部署后，图片加载速度取决于你的站点服务器。</p>
+<h3 id="1-2-使用图床与绝对路径（推荐，提升加载速度）">1.2 使用图床与绝对路径（推荐，提升加载速度）</h3>
+<p>图床是一个专业的在线图片存储服务。将图片上传到图床后，你会获得一个可以直接访问的图片链接（URL）。</p>
+<ul>
+<li>
+<p><strong>步骤</strong>：</p>
+<ol>
+<li>将图片上传到图床。</li>
+<li>复制图床提供的图片直链（通常以 <code>.jpg</code>、<code>.png</code> 等结尾）。</li>
+<li>在文章中插入：<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片描述文字</span>](<span class="link">https://你的图床域名/图片路径.jpg</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>优点</strong>：</p>
+<ul>
+<li><strong>加载更快</strong>：专业图床有全球CDN加速。</li>
+<li><strong>减轻服务器负担</strong>：不占用你博客主机的流量和存储空间。</li>
+<li><strong>管理方便</strong>：可以随时在图床管理所有图片。</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-使用-Hexo-标签插件（功能更丰富）">3. <strong>使用 Hexo 标签插件（功能更丰富）</strong></h4>
+<p>Hexo 提供了 <code>&#123;% asset_img %&#125;</code> 和 <code>&#123;% asset_path %&#125;</code> 等<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins">标签插件</a>。使用资源文件夹（Asset Folder）需要先在 <code>_config.yml</code> 中启用 <code>post_asset_folder: true</code>。</p>
+<ul>
+<li><strong>优点</strong>：与文章关联性更强，某些主题可能会针对此做优化。</li>
+<li><strong>缺点</strong>：语法稍复杂，且路径处理可能对新手不直观。</li>
+</ul>
+<p>这个以后有空再研究吧。</p>
+<h2 id="2-插入视屏">2 插入视屏</h2>
+<p>由于标准 Markdown 不支持直接插入视频，通常需要借助其他方法。</p>
+<h3 id="2-1-使用-HTML-video-标签（最通用可靠）">2.1 使用 HTML <code>&lt;video&gt;</code> 标签（最通用可靠）</h3>
+<p>你可以直接在 Markdown 文件中写入 HTML 代码，浏览器可以完美渲染。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">&quot;你的视频地址.mp4&quot;</span> <span class="attr">controls</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>常用属性</strong>：
+<ul>
+<li><code>controls</code>：显示播放控件（播放/暂停、音量、进度条等）。</li>
+<li><code>width</code>：设置视频显示宽度，<code>“100%”</code> 表示自适应容器宽度。</li>
+<li><code>poster=“封面图地址.jpg”</code>：设置视频播放前的封面图。</li>
+<li><code>autoplay</code>：自动播放（很多浏览器已禁止）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-嵌入在线视频平台链接（最推荐）">2.2 嵌入在线视频平台链接（最推荐）</h3>
+<p>对于B站、YouTube、腾讯视频等平台的视频，最佳做法是使用其提供的“嵌入代码”。</p>
+<ul>
+<li>
+<p><strong>步骤</strong>：</p>
+<ol>
+<li>在视频页面找到“分享”或“嵌入”按钮。</li>
+<li>复制提供的 <code>&lt;iframe&gt;</code> 代码片段。</li>
+<li>直接将这段代码粘贴到你的 Markdown 文章中即可。</li>
+</ol>
+</li>
+<li>
+<p><strong>优点</strong>：</p>
+<ul>
+<li><strong>不消耗自身流量和存储</strong>。</li>
+<li><strong>播放体验好</strong>，直接使用平台成熟的播放器。</li>
+<li><strong>支持弹幕、清晰度切换等高级功能</strong>。</li>
+</ul>
+</li>
+</ul>
 
     </div>
 
@@ -296,17 +337,17 @@
       <hr>
       <div class="series-title">本系列文章</div>
       <ul class="series-list">
-            <li><a href="/2026/01/08/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
-            <li><a href="/2026/01/10/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
-            <li class="series-current">第03篇 - 搭建过程之：一路踩坑</li>
-            <li><a href="/2026/01/10/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
-            <li><a href="/2026/01/10/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
-            <li><a href="/2026/01/11/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
-            <li><a href="/2026/01/11/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
-            <li><a href="/2026/01/11/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
-            <li><a href="/2026/01/11/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
-            <li><a href="/2026/01/11/personal_blog_10/">第10篇 - 怎么插入图片和视频</a></li>
-            <li><a href="/2026/01/11/personal_blog_11/">第11篇 - 怎么创建文章系列导航</a></li>
+            <li><a href="/2026/01/08/tech_blog/personal_blog_01/">第01篇 - 选择困难症发作</a></li>
+            <li><a href="/2026/01/10/tech_blog/personal_blog_02/">第02篇 - 搭建过程之：披荆斩棘，晋级啦！</a></li>
+            <li><a href="/2026/01/10/tech_blog/personal_blog_03/">第03篇 - 搭建过程之：一路踩坑</a></li>
+            <li><a href="/2026/01/10/tech_blog/personal_blog_04/">第04篇 - 备份Hexo博客的源码目录，上传到Gitee仓库</a></li>
+            <li><a href="/2026/01/10/tech_blog/personal_blog_05/">第05篇 - 更换Hexo主题</a></li>
+            <li><a href="/2026/01/11/tech_blog/personal_blog_06/">第06篇 - 怎么给文章分类、打标签、展示目录</a></li>
+            <li><a href="/2026/01/11/tech_blog/personal_blog_07/">第07篇 - 怎么制作/about/、/categories/、/tags/页面</a></li>
+            <li><a href="/2026/01/11/tech_blog/personal_blog_08/">第08篇 - 让世界找到我——SEO大冒险(站点地图制作和提交)</a></li>
+            <li><a href="/2026/01/11/tech_blog/personal_blog_09/">第09篇 - 添加统计字数和阅读时长的插件</a></li>
+            <li class="series-current">第10篇 - 怎么插入图片和视频</li>
+            <li><a href="/2026/01/11/tech_blog/personal_blog_11/">第11篇 - 怎么创建文章系列导航</a></li>
       </ul>
       <hr>
     </div>
@@ -326,12 +367,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2026/01/10/personal_blog_02/" rel="prev" title="我的博客搭好了！过程简直像在打游戏通关 - 第02篇">
-      <i class="fa fa-chevron-left"></i> 我的博客搭好了！过程简直像在打游戏通关 - 第02篇
+    <a href="/2026/01/11/tech_blog/personal_blog_09/" rel="prev" title="我的博客搭好了！过程简直像在打游戏通关 - 第09篇">
+      <i class="fa fa-chevron-left"></i> 我的博客搭好了！过程简直像在打游戏通关 - 第09篇
     </a></div>
       <div class="post-nav-item">
-    <a href="/2026/01/10/personal_blog_04/" rel="next" title="我的博客搭好了！过程简直像在打游戏通关 - 第04篇">
-      我的博客搭好了！过程简直像在打游戏通关 - 第04篇 <i class="fa fa-chevron-right"></i>
+    <a href="/2026/01/11/tech_blog/personal_blog_11/" rel="next" title="我的博客搭好了！过程简直像在打游戏通关 - 第11篇">
+      我的博客搭好了！过程简直像在打游戏通关 - 第11篇 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -391,7 +432,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-BOSS%E6%88%98%E2%80%94%E2%80%94%E7%A5%9E%E7%A7%98%E7%9A%84%E2%80%9C%E7%AB%A0%E9%B1%BC%E7%8C%AB%E2%80%9D"><span class="nav-text">1 BOSS战——神秘的“章鱼猫”</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%92%E6%9F%A5BUG"><span class="nav-text">排查BUG</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-text">解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AE%BE%E7%BD%AE-TOC-%E6%9D%A5%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%EF%BC%8C%E6%B2%A1%E7%94%A8"><span class="nav-text">2 设置[TOC]来文章目录，没用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-2"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%92%E6%9F%A5BUG-2"><span class="nav-text">排查BUG</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-2"><span class="nav-text">解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E7%9A%84%E9%93%BE%E6%8E%A5%EF%BC%8C%E7%82%B9%E5%87%BB%E6%97%A0%E6%95%88"><span class="nav-text">3 文章目录的链接，点击无效</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-3"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%92%E6%9F%A5BUG-3"><span class="nav-text">排查BUG</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-3"><span class="nav-text">解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%96%87%E7%AB%A0%E7%9A%84%E5%AD%90%E7%9B%AE%E5%BD%95%E7%9A%84%E9%93%BE%E6%8E%A5%EF%BC%8C%E7%82%B9%E5%87%BB%E6%97%A0%E6%95%88"><span class="nav-text">4 文章的子目录的链接，点击无效</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0-4"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%92%E6%9F%A5BUG-4"><span class="nav-text">排查BUG</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-4"><span class="nav-text">解决方案</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-text">1 插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%EF%BC%88%E9%80%82%E5%90%88%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%EF%BC%89%E4%BD%BF%E7%94%A8%E5%9B%BE%E5%BA%8A"><span class="nav-text">1.1 使用本地相对路径（适合本地图片）使用图床</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E4%BD%BF%E7%94%A8%E5%9B%BE%E5%BA%8A%E4%B8%8E%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%8C%E6%8F%90%E5%8D%87%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6%EF%BC%89"><span class="nav-text">1.2 使用图床与绝对路径（推荐，提升加载速度）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E4%BD%BF%E7%94%A8-Hexo-%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6%EF%BC%88%E5%8A%9F%E8%83%BD%E6%9B%B4%E4%B8%B0%E5%AF%8C%EF%BC%89"><span class="nav-text">3. 使用 Hexo 标签插件（功能更丰富）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%8F%92%E5%85%A5%E8%A7%86%E5%B1%8F"><span class="nav-text">2 插入视屏</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E4%BD%BF%E7%94%A8-HTML-video-%E6%A0%87%E7%AD%BE%EF%BC%88%E6%9C%80%E9%80%9A%E7%94%A8%E5%8F%AF%E9%9D%A0%EF%BC%89"><span class="nav-text">2.1 使用 HTML &lt;video&gt; 标签（最通用可靠）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E5%B5%8C%E5%85%A5%E5%9C%A8%E7%BA%BF%E8%A7%86%E9%A2%91%E5%B9%B3%E5%8F%B0%E9%93%BE%E6%8E%A5%EF%BC%88%E6%9C%80%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="nav-text">2.2 嵌入在线视频平台链接（最推荐）</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -414,13 +455,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
