@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wittzh.github.io/sitemap.xml
